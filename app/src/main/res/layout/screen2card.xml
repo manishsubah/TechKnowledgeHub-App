@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardweb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/iconshtml"
+        app:cardElevation="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardios"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="202dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/apple"
+        app:cardElevation="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toTopOf="@+id/cardai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardandroid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardai"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/illustrator"
+        app:cardElevation="@android:dimen/app_icon_size"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardblockchain"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/blockchain"
+
+        app:cardElevation="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toTopOf="@+id/cardweb"
+        app:layout_constraintEnd_toStartOf="@+id/cardai"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcyber"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/cybersecurity"
+        app:cardElevation="@android:dimen/app_icon_size"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toEndOf="@+id/cardweb"
+        app:layout_constraintTop_toBottomOf="@+id/cardai"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardandroid"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foreground="@drawable/android"
+        app:cardElevation="@android:dimen/app_icon_size"
+
+        app:layout_constraintBottom_toTopOf="@+id/cardblockchain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="612dp"
+        android:gravity="center"
+        android:text="Support"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
